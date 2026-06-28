@@ -1,0 +1,15 @@
+# Core scientific stack (used by the always-available fallback model + metrics)
+numpy==1.26.4
+scipy==1.13.1
+scikit-learn==1.5.2
+joblib==1.4.2
+
+# Transformer cross-encoder (primary method). torch + transformers are only
+# needed to train/run the transformer; the scikit-learn fallback works without
+# them. protobuf + sentencepiece are required by the DeBERTa-v3 tokenizer.
+torch==2.4.1
+transformers==4.48.3
+accelerate==1.2.1
+tokenizers==0.21.0
+sentencepiece==0.2.0
+protobuf==4.25.3
