@@ -4,3 +4,8 @@ fallback.joblib
 model/
 _checkpoints/
 *.jsonl
+
+# Node
+node_modules/
+dist/
+.vite/
