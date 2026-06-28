@@ -121,8 +121,8 @@ export default function App() {
           </h1>
           <p className="lede">
             A homonym shifts meaning with the story around it. We trained a model to
-            rate&mdash;on a 1&ndash;5 scale&mdash;how plausible a given sense is, matching
-            how real readers judged it. Read a story below and see what it decides.
+            rate on a 1&ndash;5 scale how plausible a given sense is, matching
+            how real readers judged it. Read a story and see what it decides.
           </p>
           <div className="hero-tags">
             <span>DeBERTa-v3 cross-encoder</span>
