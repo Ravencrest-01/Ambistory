@@ -234,7 +234,7 @@ export default function App() {
               <BarChart data={MODELS} margin={{ top: 18, right: 8, left: -18, bottom: 0 }}>
                 <XAxis dataKey="name" tick={{ fill: "#a9a3c9", fontSize: 11 }} axisLine={false} tickLine={false} />
                 <YAxis domain={[0, 0.6]} tick={{ fill: "#6f6a90", fontSize: 10 }} axisLine={false} tickLine={false} />
-                <Tooltip cursor={{ fill: "rgba(255,255,255,0.04)" }} contentStyle={tipStyle} />
+                <Tooltip cursor={{ fill: "rgba(255,255,255,0.04)" }} contentStyle={tipStyle} itemStyle={{ color: "#efeaf7" }} />
                 <Bar dataKey="sp" radius={[6, 6, 0, 0]}>
                   {MODELS.map((m, k) => (
                     <Cell key={k} fill={k === 2 ? "url(#g)" : "#3b3766"} />
@@ -257,7 +257,7 @@ export default function App() {
               <BarChart data={BUCKETS} margin={{ top: 18, right: 8, left: -18, bottom: 0 }}>
                 <XAxis dataKey="r" tick={{ fill: "#a9a3c9", fontSize: 11 }} axisLine={false} tickLine={false} />
                 <YAxis domain={[0, 1]} tick={{ fill: "#6f6a90", fontSize: 10 }} axisLine={false} tickLine={false} />
-                <Tooltip cursor={{ fill: "rgba(255,255,255,0.04)" }} contentStyle={tipStyle} />
+                <Tooltip cursor={{ fill: "rgba(255,255,255,0.04)" }} contentStyle={tipStyle} itemStyle={{ color: "#efeaf7" }} />
                 <ReferenceLine y={0.77} stroke="#6f6a90" strokeDasharray="4 4" />
                 <Bar dataKey="acc" radius={[6, 6, 0, 0]}>
                   {BUCKETS.map((b, k) => (
